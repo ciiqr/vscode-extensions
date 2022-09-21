@@ -1,0 +1,49 @@
+name: publish
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "packages/*/CHANGELOG.md"
+jobs:
+  matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      packages: ${{ steps.set_packages.outputs.packages }}
+    steps:
+      - uses: actions/checkout@v2
+      - id: set_packages
+        run: |
+          echo "::set-output name=packages::$(
+            git diff-tree --no-commit-id --name-only -r \
+              --root --diff-filter=AM HEAD \
+              packages/*/CHANGELOG.md \
+              | xargs dirname \
+              | xargs basename \
+              | jq --compact-output --raw-input -n '[inputs]'
+          )"
+
+  publish:
+    name: Publish ${{ matrix.package }}
+    runs-on: ubuntu-latest
+    needs: matrix
+    strategy:
+      fail-fast: false
+      matrix:
+        package: ${{ fromJson(needs.matrix.outputs.packages) }}
+    defaults:
+      run:
+        working-directory: ./packages/${{ matrix.package }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version-file: .nvmrc
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./
+      - name: Publish
+        run: npx vsce publish
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
