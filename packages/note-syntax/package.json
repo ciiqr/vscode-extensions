@@ -1,7 +1,7 @@
 {
     "name": "note-syntax",
     "displayName": "Note",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "note syntax",
     "categories": [
         "Programming Languages"
@@ -20,6 +20,11 @@
     },
     "publisher": "ciiqr",
     "contributes": {
+        "configurationDefaults": {
+            "[note]": {
+                "editor.bracketPairColorization.enabled": false
+            }
+        },
         "grammars": [
             {
                 "language": "note",

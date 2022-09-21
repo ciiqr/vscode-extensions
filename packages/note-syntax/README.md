@@ -6,10 +6,12 @@ note syntax by ciiqr
 
 ## Customize
 
+### Font colors/styles
+
 The defaults work best with monokai, but can be customized for other themes in
 `settings.json`
 
-```json
+```jsonc
 "editor.tokenColorCustomizations": {
     "textMateRules": [
         // Note
