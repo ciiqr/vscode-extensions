@@ -1,0 +1,53 @@
+{
+    "name": "note-syntax",
+    "displayName": "Note",
+    "version": "1.0.0",
+    "description": "note syntax",
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "note",
+        "notes",
+        "todo"
+    ],
+    "bugs": {
+        "url": "https://github.com/ciiqr/vscode-extensions/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ciiqr/vscode-extensions"
+    },
+    "publisher": "ciiqr",
+    "contributes": {
+        "grammars": [
+            {
+                "language": "note",
+                "scopeName": "source.note",
+                "path": "./syntaxes/Note.tmLanguage.json"
+            }
+        ],
+        "languages": [
+            {
+                "id": "note",
+                "aliases": [
+                    "Note",
+                    "note"
+                ],
+                "extensions": [
+                    ".todo",
+                    ".txt"
+                ],
+                "configuration": "./language-configuration.json",
+                "icon": {
+                    "dark": "./images/language-icon.png",
+                    "light": "./images/language-icon.png"
+                }
+            }
+        ]
+    },
+    "engines": {
+        "vscode": "^1.71.0"
+    },
+    "icon": "images/icon.png"
+}

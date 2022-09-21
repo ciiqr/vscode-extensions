@@ -8,6 +8,7 @@
         "./packages/*"
     ],
     "scripts": {
+        "bump-version": "./scripts/bump-version.sh",
         "lint": "check-package-lock && shellcheck-all && tsc --noEmit && eslint . && prettier --loglevel warn --check .",
         "lint:fix": "eslint --fix . && prettier --loglevel warn --write .",
         "prepare": "husky install"

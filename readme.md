@@ -2,11 +2,18 @@
 
 ## develop
 
+-   install
+
 ```bash
 npm install
 ```
 
-<!-- TODO: document `menu` to see commands -->
+-   start extensions with `F5`
+
+## update package version
+
+-   `npm run bump-version -- <package-name>`
+-   update changelog
 
 <!-- TODO: remove? -->
 
@@ -36,3 +43,13 @@ npm install
 -   `npm i -D @pentible/eslint-config-node`
 -   insert `- "@pentible/eslint-config-node"` into `.eslintrc.yml`
 -   `npm i -D yo generator-code`
+
+### note syntax
+
+-   `mkdir -p packages`
+-   `cd packages`
+-   `yo code`
+-   move `packages/note-syntax/.vscode` to `.vscode`
+-   fix `.vscode/launch.json`
+    -   rename configuration to `note-syntax`
+    -   append `/packages/note-syntax` to `--extensionDevelopmentPath` arg
