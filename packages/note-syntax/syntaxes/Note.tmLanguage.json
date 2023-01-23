@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
     "name": "Note",
     "scopeName": "source.note",
-    "fileTypes": ["todo", "txt"],
+    "fileTypes": ["txt", "todo"],
     "patterns": [
         {
             "match": "^\\s*(#.*)",

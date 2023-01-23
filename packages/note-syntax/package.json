@@ -1,7 +1,7 @@
 {
     "name": "note-syntax",
     "displayName": "Note",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "note syntax",
     "categories": [
         "Programming Languages"
@@ -40,8 +40,8 @@
                     "note"
                 ],
                 "extensions": [
-                    ".todo",
-                    ".txt"
+                    ".txt",
+                    ".todo"
                 ],
                 "configuration": "./language-configuration.json",
                 "icon": {

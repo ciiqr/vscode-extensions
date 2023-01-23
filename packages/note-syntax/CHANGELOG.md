@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.0 - 2023-01-23
+
+-   changed default file extension to .txt
+
 ## 1.1.0 - 2022-09-21
 
 -   Disable bracket pair colorization
