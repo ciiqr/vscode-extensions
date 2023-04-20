@@ -2,7 +2,3 @@
 [devshell]
 motd = ""
 packages = ["nodejs-18_x"]
-
-[[env]]
-name = "PATH"
-prefix = "$(npm bin)"
