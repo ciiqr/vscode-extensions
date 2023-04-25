@@ -14,19 +14,19 @@
         "prepare": "husky install"
     },
     "devDependencies": {
-        "@pentible/check-package-lock": "0.41.0",
-        "@pentible/eslint-config": "0.41.0",
-        "@pentible/eslint-config-node": "0.41.0",
-        "@pentible/eslint-config-prettier": "0.41.0",
-        "@pentible/prettier": "0.41.0",
-        "@pentible/shellcheck-all": "0.41.0",
-        "@pentible/tsconfig": "0.41.0",
-        "generator-code": "1.6.14",
-        "husky": "7.0.4",
-        "lint-staged": "12.5.0",
-        "prettier": "2.7.1",
-        "typescript": "4.8.3",
+        "@pentible/check-package-lock": "0.67.0",
+        "@pentible/eslint-config": "0.67.0",
+        "@pentible/eslint-config-node": "0.67.0",
+        "@pentible/eslint-config-prettier": "0.67.0",
+        "@pentible/prettier": "0.67.0",
+        "@pentible/shellcheck-all": "0.67.0",
+        "@pentible/tsconfig": "0.67.0",
+        "generator-code": "1.7.5",
+        "husky": "8.0.3",
+        "lint-staged": "13.2.1",
+        "prettier": "2.8.8",
+        "typescript": "5.0.4",
         "vsce": "2.11.0",
-        "yo": "4.3.0"
+        "yo": "4.3.1"
     }
 }
