@@ -6,12 +6,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "note-syntax",
+            "name": "vscode-extensions",
             "type": "extensionHost",
             "request": "launch",
             "args": [
-                "--extensionDevelopmentPath=${workspaceFolder}/packages/note-syntax"
-            ]
+                "--extensionDevelopmentPath=${workspaceFolder}/packages/note-syntax",
+                "--extensionDevelopmentPath=${workspaceFolder}/packages/encode"
+            ],
+            "outFiles": ["${workspaceFolder}/packages/encode/dist/**/*.js"],
+            "preLaunchTask": "dev"
         }
     ]
 }

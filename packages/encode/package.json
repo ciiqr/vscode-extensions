@@ -1,0 +1,109 @@
+{
+    "name": "encode",
+    "displayName": "Encode",
+    "version": "1.0.0",
+    "description": "encode/decode selection (ie. base64, url, etc)",
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "encode",
+        "decode",
+        "encrypt",
+        "hash",
+        "md5",
+        "sha-1",
+        "sha-256",
+        "sha-512",
+        "base16",
+        "base64",
+        "json",
+        "url"
+    ],
+    "bugs": {
+        "url": "https://github.com/ciiqr/vscode-extensions/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ciiqr/vscode-extensions"
+    },
+    "publisher": "ciiqr",
+    "main": "./dist/src/extension.js",
+    "scripts": {
+        "dev": "tsc --watch",
+        "vscode:prepublish": "tsc"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "title": "MD5 Hash",
+                "command": "encode.hashMd5"
+            },
+            {
+                "title": "SHA-1 Hash",
+                "command": "encode.hashSha1"
+            },
+            {
+                "title": "SHA-256 Hash",
+                "command": "encode.hashSha256"
+            },
+            {
+                "title": "SHA-512 Hash",
+                "command": "encode.hashSha512"
+            },
+            {
+                "title": "Base16 (hex) Encode",
+                "command": "encode.encodeBase16Hex"
+            },
+            {
+                "title": "Base16 (hex) Decode",
+                "command": "encode.decodeBase16Hex"
+            },
+            {
+                "title": "Base64 Encode",
+                "command": "encode.encodeBase64"
+            },
+            {
+                "title": "Base64 Decode",
+                "command": "encode.decodeBase64"
+            },
+            {
+                "title": "Base64 URL Safe Encode",
+                "command": "encode.encodeBase64UrlSafe"
+            },
+            {
+                "title": "Base64 URL Safe Decode",
+                "command": "encode.decodeBase64UrlSafe"
+            },
+            {
+                "title": "JSON String Encode",
+                "command": "encode.encodeJsonString"
+            },
+            {
+                "title": "JSON String Decode",
+                "command": "encode.decodeJsonString"
+            },
+            {
+                "title": "URL (RFC 2396) Encode",
+                "command": "encode.encodeUrlRfc2396"
+            },
+            {
+                "title": "URL (RFC 2396) Decode",
+                "command": "encode.decodeUrlRfc2396"
+            }
+        ]
+    },
+    "activationEvents": [],
+    "devDependencies": {
+        "@types/node": "16.18.25",
+        "@types/vscode": "^1.77.0",
+        "@typescript-eslint/eslint-plugin": "^5.56.0",
+        "@typescript-eslint/parser": "^5.56.0",
+        "@vscode/test-electron": "^2.3.0",
+        "eslint": "^8.36.0",
+        "typescript": "5.0.4"
+    },
+    "engines": {
+        "vscode": "^1.77.0"
+    }
+}

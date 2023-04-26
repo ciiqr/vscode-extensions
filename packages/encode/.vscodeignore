@@ -1,0 +1,12 @@
+# Ignore everything
+../../**
+../**
+*/**
+*
+
+# Whitelist needed files
+!CHANGELOG.md
+!README.md
+!images/*.png
+!package.json
+!dist/**
