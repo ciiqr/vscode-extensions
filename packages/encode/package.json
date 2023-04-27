@@ -2,6 +2,7 @@
     "name": "encode",
     "displayName": "Encode",
     "version": "1.0.0",
+    "private": true,
     "description": "encode/decode selection (ie. base64, url, etc)",
     "categories": [
         "Other"
@@ -27,6 +28,7 @@
         "type": "git",
         "url": "https://github.com/ciiqr/vscode-extensions"
     },
+    "license": "MIT",
     "publisher": "ciiqr",
     "main": "./dist/src/extension.js",
     "scripts": {
@@ -95,6 +97,8 @@
     },
     "activationEvents": [],
     "devDependencies": {
+        "@pentible/eslint-config-node": "0.68.0",
+        "@pentible/eslint-config-prettier": "0.68.0",
         "@types/node": "16.18.25",
         "@types/vscode": "^1.77.0",
         "@typescript-eslint/eslint-plugin": "^5.56.0",
