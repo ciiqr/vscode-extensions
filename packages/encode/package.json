@@ -17,9 +17,11 @@
         "sha-256",
         "sha-512",
         "base16",
+        "hex",
         "base64",
         "json",
-        "url"
+        "url",
+        "rfc2396"
     ],
     "bugs": {
         "url": "https://github.com/ciiqr/vscode-extensions/issues"
