@@ -2,5 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npx check-package-lock
-npx tsc --noEmit
+npx tsc -b
 npx lint-staged

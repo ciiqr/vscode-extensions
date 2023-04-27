@@ -1,0 +1,54 @@
+{
+    "name": "reindent",
+    "displayName": "Reindent",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Reindent between 2 and 4 spaces",
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "reindent"
+    ],
+    "bugs": {
+        "url": "https://github.com/ciiqr/vscode-extensions/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ciiqr/vscode-extensions"
+    },
+    "license": "MIT",
+    "publisher": "ciiqr",
+    "main": "./dist/src/extension.js",
+    "scripts": {
+        "dev": "tsc --watch",
+        "vscode:prepublish": "tsc"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "title": "Reindent to 2",
+                "command": "reindent.reindentTo2"
+            },
+            {
+                "title": "Reindent to 4",
+                "command": "reindent.reindentTo4"
+            }
+        ]
+    },
+    "activationEvents": [],
+    "devDependencies": {
+        "@pentible/eslint-config-node": "0.68.0",
+        "@pentible/eslint-config-prettier": "0.68.0",
+        "@types/node": "16.18.25",
+        "@types/vscode": "^1.77.0",
+        "@typescript-eslint/eslint-plugin": "^5.56.0",
+        "@typescript-eslint/parser": "^5.56.0",
+        "@vscode/test-electron": "^2.3.0",
+        "eslint": "^8.36.0",
+        "typescript": "5.0.4"
+    },
+    "engines": {
+        "vscode": "^1.77.0"
+    }
+}

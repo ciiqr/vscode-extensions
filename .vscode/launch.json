@@ -11,9 +11,13 @@
             "request": "launch",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}/packages/note-syntax",
-                "--extensionDevelopmentPath=${workspaceFolder}/packages/encode"
+                "--extensionDevelopmentPath=${workspaceFolder}/packages/encode",
+                "--extensionDevelopmentPath=${workspaceFolder}/packages/reindent"
             ],
-            "outFiles": ["${workspaceFolder}/packages/encode/dist/**/*.js"],
+            "outFiles": [
+                "${workspaceFolder}/packages/encode/dist/**/*.js",
+                "${workspaceFolder}/packages/reindent/dist/**/*.js"
+            ],
             "preLaunchTask": "dev"
         }
     ]

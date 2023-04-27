@@ -11,15 +11,16 @@ jobs:
     outputs:
       packages: ${{ steps.set_packages.outputs.packages }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - id: set_packages
         run: |
+          # TODO: figure out why `xargs dirname` suddenly broke (replaced with sed below...)
           echo "packages=$(
             git diff-tree --no-commit-id --name-only -r \
               --root --diff-filter=AM HEAD \
               packages/*/CHANGELOG.md \
               | xargs dirname \
-              | xargs basename \
+              | sed -e 's@packages/@@' \
               | jq --compact-output --raw-input -n '[inputs]'
           )" >> $GITHUB_OUTPUT
 
@@ -35,9 +36,9 @@ jobs:
       run:
         working-directory: ./packages/${{ matrix.package }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version-file: .nvmrc
       - name: Install dependencies

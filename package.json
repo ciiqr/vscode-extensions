@@ -10,7 +10,7 @@
     "scripts": {
         "bump-version": "./scripts/bump-version.sh",
         "dev": "turbo dev",
-        "lint": "check-package-lock && shellcheck-all && tsc --noEmit && eslint . && prettier --loglevel warn --check .",
+        "lint": "check-package-lock && shellcheck-all && tsc -b && eslint . && prettier --loglevel warn --check .",
         "lint:fix": "eslint --fix . && prettier --loglevel warn --write .",
         "prepare": "husky install"
     },
