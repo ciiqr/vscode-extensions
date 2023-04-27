@@ -14,13 +14,12 @@ jobs:
       - uses: actions/checkout@v3
       - id: set_packages
         run: |
-          # TODO: figure out why `xargs dirname` suddenly broke (replaced with sed below...)
           echo "packages=$(
             git diff-tree --no-commit-id --name-only -r \
               --root --diff-filter=AM HEAD \
               packages/*/CHANGELOG.md \
-              | xargs dirname \
-              | sed -e 's@packages/@@' \
+              | xargs -n1 dirname \
+              | xargs -n1 basename \
               | jq --compact-output --raw-input -n '[inputs]'
           )" >> $GITHUB_OUTPUT
 
