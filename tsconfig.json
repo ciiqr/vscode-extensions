@@ -7,6 +7,9 @@
         },
         {
             "path": "./packages/reindent"
+        },
+        {
+            "path": "./packages/fold-comments"
         }
     ]
 }

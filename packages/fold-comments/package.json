@@ -1,14 +1,15 @@
 {
-    "name": "reindent",
-    "displayName": "Reindent",
+    "name": "fold-comments",
+    "displayName": "Fold Comments",
     "version": "1.0.0",
     "private": true,
-    "description": "reindent between 2 and 4 spaces",
+    "description": "fold comments",
     "categories": [
         "Other"
     ],
     "keywords": [
-        "reindent"
+        "fold",
+        "comment"
     ],
     "bugs": {
         "url": "https://github.com/ciiqr/vscode-extensions/issues"
@@ -27,12 +28,16 @@
     "contributes": {
         "commands": [
             {
-                "title": "Reindent to 2",
-                "command": "reindent.reindentTo2"
+                "title": "Fold Comments: Toggle",
+                "command": "fold-comments.toggle"
             },
             {
-                "title": "Reindent to 4",
-                "command": "reindent.reindentTo4"
+                "title": "Fold Comments: Fold",
+                "command": "fold-comments.fold"
+            },
+            {
+                "title": "Fold Comments: Unfold",
+                "command": "fold-comments.unfold"
             }
         ]
     },

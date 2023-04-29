@@ -12,11 +12,13 @@
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}/packages/note-syntax",
                 "--extensionDevelopmentPath=${workspaceFolder}/packages/encode",
-                "--extensionDevelopmentPath=${workspaceFolder}/packages/reindent"
+                "--extensionDevelopmentPath=${workspaceFolder}/packages/reindent",
+                "--extensionDevelopmentPath=${workspaceFolder}/packages/fold-comments"
             ],
             "outFiles": [
                 "${workspaceFolder}/packages/encode/dist/**/*.js",
-                "${workspaceFolder}/packages/reindent/dist/**/*.js"
+                "${workspaceFolder}/packages/reindent/dist/**/*.js",
+                "${workspaceFolder}/packages/fold-comments/dist/**/*.js"
             ],
             "preLaunchTask": "dev"
         }
