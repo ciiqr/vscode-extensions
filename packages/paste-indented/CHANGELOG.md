@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.2.0 - 2023-05-01
+
+-   limited to languages which aren't handled properly by built in paste
+-   do our best to trim excess indentation
+
 ## 1.1.0 - 2023-05-01
 
 -   fixed pasting with clipboard line count matching the selection count

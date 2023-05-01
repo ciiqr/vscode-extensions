@@ -1,7 +1,7 @@
 {
     "name": "paste-indented",
     "displayName": "Paste Indented",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "private": true,
     "description": "paste indented to the same level as the current line",
     "categories": [

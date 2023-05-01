@@ -12,16 +12,25 @@ jobs:
       packages: ${{ steps.set_packages.outputs.packages }}
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - id: set_packages
         run: |
+          echo '---'
+          git diff-tree --no-commit-id --name-only -r \
+            --root --diff-filter=AM "$PREVIOUS_GIT_COMMIT" HEAD -- \
+            packages/*/CHANGELOG.md
+          echo '---'
           echo "packages=$(
             git diff-tree --no-commit-id --name-only -r \
-              --root --diff-filter=AM HEAD \
+              --root --diff-filter=AM "$PREVIOUS_GIT_COMMIT" HEAD -- \
               packages/*/CHANGELOG.md \
               | xargs -n1 dirname \
               | xargs -n1 basename \
               | jq --compact-output --raw-input -n '[inputs]'
           )" >> $GITHUB_OUTPUT
+        env:
+          PREVIOUS_GIT_COMMIT: ${{ github.event.before }}
 
   publish:
     name: Publish ${{ matrix.package }}
@@ -36,8 +45,6 @@ jobs:
         working-directory: ./packages/${{ matrix.package }}
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
