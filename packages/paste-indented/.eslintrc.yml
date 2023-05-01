@@ -1,0 +1,7 @@
+extends:
+  - "@pentible/eslint-config-node"
+  - "@pentible/eslint-config-prettier"
+overrides:
+  - files: ["src/extension.ts"]
+    rules:
+      import/no-unused-modules: off

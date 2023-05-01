@@ -1,0 +1,52 @@
+{
+    "name": "paste-indented",
+    "displayName": "Paste Indented",
+    "version": "1.0.0",
+    "private": true,
+    "description": "paste indented to the same level as the current line",
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "paste",
+        "indent",
+        "indented"
+    ],
+    "bugs": {
+        "url": "https://github.com/ciiqr/vscode-extensions/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ciiqr/vscode-extensions"
+    },
+    "license": "MIT",
+    "publisher": "ciiqr",
+    "main": "./dist/src/extension.js",
+    "scripts": {
+        "dev": "tsc --watch",
+        "vscode:prepublish": "tsc"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "title": "Paste Indented",
+                "command": "paste-indented.paste"
+            }
+        ]
+    },
+    "activationEvents": [],
+    "devDependencies": {
+        "@pentible/eslint-config-node": "0.68.0",
+        "@pentible/eslint-config-prettier": "0.68.0",
+        "@types/node": "16.18.25",
+        "@types/vscode": "^1.77.0",
+        "@typescript-eslint/eslint-plugin": "^5.56.0",
+        "@typescript-eslint/parser": "^5.56.0",
+        "@vscode/test-electron": "^2.3.0",
+        "eslint": "^8.36.0",
+        "typescript": "5.0.4"
+    },
+    "engines": {
+        "vscode": "^1.77.0"
+    }
+}
