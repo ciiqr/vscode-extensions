@@ -9,25 +9,44 @@ export function activate(context: ExtensionContext) {
                 return;
             }
 
-            const clipboardText = await env.clipboard.readText();
+            const clipboardLines = (await env.clipboard.readText()).split("\n");
 
-            await editor.edit((editBuilder) => {
-                editor.selections.forEach((selection) => {
-                    const line = editor.document.lineAt(selection.start);
-                    const text = indentToMatchLine(clipboardText, line);
+            if (clipboardLines.length === editor.selections.length) {
+                // one clipboard line per selection
+                await editor.edit((editBuilder) => {
+                    editor.selections.forEach((selection, i) => {
+                        const clipboardLine = clipboardLines[i];
+                        if (clipboardLine === undefined) {
+                            throw new Error(
+                                "Unreachable: clipboard/selection counts matched",
+                            );
+                        }
 
-                    editBuilder.replace(selection, text);
+                        const line = editor.document.lineAt(selection.start);
+                        const text = indentToMatchLine([clipboardLine], line);
+
+                        editBuilder.replace(selection, text);
+                    });
                 });
-            });
+            } else {
+                // whole clipboard into each selection
+                await editor.edit((editBuilder) => {
+                    editor.selections.forEach((selection) => {
+                        const line = editor.document.lineAt(selection.start);
+                        const text = indentToMatchLine(clipboardLines, line);
+
+                        editBuilder.replace(selection, text);
+                    });
+                });
+            }
         }),
     );
 }
 
-function indentToMatchLine(text: string, line: TextLine) {
+function indentToMatchLine(textLines: string[], line: TextLine) {
     const indent = line.text.slice(0, line.firstNonWhitespaceCharacterIndex);
 
-    return text
-        .split("\n")
+    return textLines
         .map((line, i) => (i === 0 || line === "" ? line : indent + line))
         .join("\n");
 }
