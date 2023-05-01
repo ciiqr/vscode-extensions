@@ -16,11 +16,6 @@ jobs:
           fetch-depth: 0
       - id: set_packages
         run: |
-          echo '---'
-          git diff-tree --no-commit-id --name-only -r \
-            --root --diff-filter=AM "$PREVIOUS_GIT_COMMIT" HEAD -- \
-            packages/*/CHANGELOG.md
-          echo '---'
           echo "packages=$(
             git diff-tree --no-commit-id --name-only -r \
               --root --diff-filter=AM "$PREVIOUS_GIT_COMMIT" HEAD -- \
