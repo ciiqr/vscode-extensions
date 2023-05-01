@@ -9,7 +9,27 @@ export function activate(context: ExtensionContext) {
                 return;
             }
 
-            const clipboardLines = (await env.clipboard.readText()).split("\n");
+            let clipboardLines = (await env.clipboard.readText()).split("\n");
+            // TOOD: account for tabs (each as tabSize spaces)
+            const minIndentSpaces = clipboardLines.reduce((pv, cv, i) => {
+                const indentation = cv.match(/^ +/u)?.[0] ?? "";
+
+                return i === 0 ? pv : Math.min(pv, indentation.length);
+            }, Number.MAX_SAFE_INTEGER);
+            // // TODO: should really be indentSize
+            // const minIndent = minIndentSpaces / Number(editor.options.tabSize);
+
+            clipboardLines = clipboardLines.map((v, i) =>
+                // // TODO: should really be indentSize
+                i === 0
+                    ? v
+                    : v.slice(
+                          Math.max(
+                              0,
+                              minIndentSpaces - Number(editor.options.tabSize),
+                          ),
+                      ),
+            );
 
             if (clipboardLines.length === editor.selections.length) {
                 // one clipboard line per selection
