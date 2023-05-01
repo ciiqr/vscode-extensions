@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.3.0 - 2023-05-01
+
+-   updated readme with recommended keybindings
+
 ## 1.2.0 - 2023-05-01
 
 -   limited to languages which aren't handled properly by built in paste
