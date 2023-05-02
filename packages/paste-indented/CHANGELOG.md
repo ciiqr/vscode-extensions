@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.0 - 2023-05-01
+
+-   updated readme with details on what this extension does
+
 ## 1.3.0 - 2023-05-01
 
 -   updated readme with recommended keybindings

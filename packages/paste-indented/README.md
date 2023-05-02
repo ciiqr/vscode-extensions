@@ -2,6 +2,12 @@
 
 Paste indented to the same level as the current line
 
+## Why?
+
+While many languages already auto indent on paste, certain languages do not
+(notably yaml and python). This extension fixes pasting in these languages (and
+falls back to default behavior for all others).
+
 ## Commands
 
 -   `Paste Indented`
