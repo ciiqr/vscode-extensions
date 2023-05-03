@@ -475,6 +475,22 @@
             "settings": {
                 "foreground": "#F59E0B"
             }
+        },
+        // Note (ciiqr.note-syntax)
+        {
+            // -
+            "scope": "source.note variable.parameter",
+            "settings": {
+                "fontStyle": ""
+            }
+        },
+        {
+            // !!
+            "scope": "source.note invalid",
+            "settings": {
+                "foreground": "#DB2777",
+                "fontStyle": "bold underline"
+            }
         }
     ],
     "semanticHighlighting": true

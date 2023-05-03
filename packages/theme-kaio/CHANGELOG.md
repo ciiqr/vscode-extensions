@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.1.0 - 2023-05-02
+
+-   added Note (ciiqr.note-syntax) support
+
 ## 1.0.0 - 2023-05-02
 
 -   Initial release
