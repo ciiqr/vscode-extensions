@@ -50,6 +50,7 @@
         "menu.background": "#1C1917",
         "menu.foreground": "#D6D3D1",
         "minimap.selectionHighlight": "#A8A29E80",
+        "minimapSlider.background": "#78716C60",
         "panel.border": "#44403c",
         "panelTitle.activeBorder": "#78716C",
         "panelTitle.activeForeground": "#F5F5F4",
