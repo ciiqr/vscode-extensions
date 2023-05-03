@@ -11,6 +11,7 @@
             "request": "launch",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}/packages/note-syntax",
+                "--extensionDevelopmentPath=${workspaceFolder}/packages/theme-kaio",
                 "--extensionDevelopmentPath=${workspaceFolder}/packages/encode",
                 "--extensionDevelopmentPath=${workspaceFolder}/packages/reindent",
                 "--extensionDevelopmentPath=${workspaceFolder}/packages/fold-comments",
