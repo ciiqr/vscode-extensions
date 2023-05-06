@@ -1,3 +1,10 @@
+// main colours
+// string: #FDDD6C (mid way between #FDE68A and #FCD34D: https://meyerweb.com/eric/tools/color-blend/#FDE68A:FCD34D:1:hex)
+// keyword: #DB2777
+// argument: #F59E0B
+// function: #A3E635
+// number: #A78BFA
+// declaration: #67E8F9
 {
     "name": "Kaio",
     "type": "dark",
@@ -87,7 +94,7 @@
         "terminal.ansiBrightMagenta": "#A78BFA",
         "terminal.ansiBrightRed": "#DB2777",
         "terminal.ansiBrightWhite": "#F5F5F4",
-        "terminal.ansiBrightYellow": "#FDE047",
+        "terminal.ansiBrightYellow": "#FDDD6C",
         "terminal.ansiCyan": "#56ADBC",
         "terminal.ansiGreen": "#86B42B",
         "terminal.ansiMagenta": "#8C6BC8",
@@ -124,7 +131,7 @@
             "name": "String",
             "scope": "string",
             "settings": {
-                "foreground": "#FDE047"
+                "foreground": "#FDDD6C"
             }
         },
         {
@@ -323,7 +330,7 @@
             "name": "diff.changed",
             "scope": "markup.changed",
             "settings": {
-                "foreground": "#FDE047"
+                "foreground": "#FDDD6C"
             }
         },
         {
@@ -335,7 +342,7 @@
         {
             "scope": "entity.name.filename.find-in-files",
             "settings": {
-                "foreground": "#FDE047"
+                "foreground": "#FDDD6C"
             }
         },
         {
@@ -349,7 +356,7 @@
             "name": "Markup Lists",
             "scope": "markup.list",
             "settings": {
-                "foreground": "#FDE047"
+                "foreground": "#FDDD6C"
             }
         },
         {
@@ -415,7 +422,7 @@
             "name": "Markdown Underline Link/Image",
             "scope": "markup.underline.link.markdown,markup.underline.link.image.markdown",
             "settings": {
-                "foreground": "#FDE047"
+                "foreground": "#FDDD6C"
             }
         },
         {
