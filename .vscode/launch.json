@@ -15,13 +15,15 @@
                 "--extensionDevelopmentPath=${workspaceFolder}/packages/encode",
                 "--extensionDevelopmentPath=${workspaceFolder}/packages/reindent",
                 "--extensionDevelopmentPath=${workspaceFolder}/packages/fold-comments",
-                "--extensionDevelopmentPath=${workspaceFolder}/packages/paste-indented"
+                "--extensionDevelopmentPath=${workspaceFolder}/packages/paste-indented",
+                "--extensionDevelopmentPath=${workspaceFolder}/packages/convert"
             ],
             "outFiles": [
                 "${workspaceFolder}/packages/encode/dist/**/*.js",
                 "${workspaceFolder}/packages/reindent/dist/**/*.js",
                 "${workspaceFolder}/packages/fold-comments/dist/**/*.js",
-                "${workspaceFolder}/packages/paste-indented/dist/**/*.js"
+                "${workspaceFolder}/packages/paste-indented/dist/**/*.js",
+                "${workspaceFolder}/packages/convert/dist/**/*.js"
             ],
             "preLaunchTask": "dev"
         }

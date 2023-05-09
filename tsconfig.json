@@ -13,6 +13,9 @@
         },
         {
             "path": "./packages/paste-indented"
+        },
+        {
+            "path": "./packages/convert"
         }
     ]
 }

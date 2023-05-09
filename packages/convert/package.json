@@ -1,0 +1,59 @@
+{
+    "name": "convert-format",
+    "displayName": "Convert",
+    "version": "1.0.0",
+    "private": true,
+    "description": "convert selection between formats (ie. json to yaml)",
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "convert",
+        "format",
+        "json",
+        "yaml"
+    ],
+    "bugs": {
+        "url": "https://github.com/ciiqr/vscode-extensions/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ciiqr/vscode-extensions"
+    },
+    "license": "MIT",
+    "publisher": "ciiqr",
+    "main": "./dist/src/extension.js",
+    "scripts": {
+        "build": "esbuild --bundle --platform=node --target=node16 --external:vscode --format=cjs --minify --outfile=./dist/src/extension.js src/extension.ts",
+        "dev": "npm run build -- --sourcemap --watch",
+        "vscode:prepublish": "tsc --noEmit && npm run build"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "title": "Convert: JSON to YAML",
+                "command": "convert.jsonToYaml"
+            },
+            {
+                "title": "Convert: YAML to JSON",
+                "command": "convert.yamlToJson"
+            }
+        ]
+    },
+    "activationEvents": [],
+    "devDependencies": {
+        "@pentible/eslint-config-node": "0.68.0",
+        "@pentible/eslint-config-prettier": "0.68.0",
+        "@types/node": "16.18.25",
+        "@types/vscode": "^1.77.0",
+        "@typescript-eslint/eslint-plugin": "^5.56.0",
+        "@typescript-eslint/parser": "^5.56.0",
+        "@vscode/test-electron": "^2.3.0",
+        "eslint": "^8.36.0",
+        "typescript": "5.0.4",
+        "yaml": "2.2.2"
+    },
+    "engines": {
+        "vscode": "^1.77.0"
+    }
+}
