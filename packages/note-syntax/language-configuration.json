@@ -30,5 +30,8 @@
             "beforeText": "^\\s*%\\s+.*",
             "action": { "indent": "indent" }
         }
-    ]
+    ],
+    "folding": {
+        "offSide": true
+    }
 }
