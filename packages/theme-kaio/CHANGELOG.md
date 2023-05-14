@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.0 - 2023-05-13
+
+-   added an icon
+
 ## 1.3.0 - 2023-05-06
 
 -   tweaked string yellow

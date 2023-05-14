@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.0 - 2023-05-13
+
+-   updated icon and sample image
+
 ## 1.3.0 - 2023-05-09
 
 -   fixed section folding (so it doesn't include blank lines at the end)
