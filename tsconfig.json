@@ -2,20 +2,10 @@
     "extends": "@pentible/tsconfig",
     "include": [],
     "references": [
-        {
-            "path": "./packages/encode"
-        },
-        {
-            "path": "./packages/reindent"
-        },
-        {
-            "path": "./packages/fold-comments"
-        },
-        {
-            "path": "./packages/paste-indented"
-        },
-        {
-            "path": "./packages/convert"
-        }
+        { "path": "./packages/encode" },
+        { "path": "./packages/reindent" },
+        { "path": "./packages/fold-comments" },
+        { "path": "./packages/paste-indented" },
+        { "path": "./packages/convert" }
     ]
 }

@@ -3,4 +3,3 @@ node_modules
 /.husky/_/
 *.tgz
 tsconfig.tsbuildinfo
-/.direnv/

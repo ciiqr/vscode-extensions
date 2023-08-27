@@ -1,4 +1,0 @@
-# https://numtide.github.io/devshell
-[devshell]
-motd = ""
-packages = ["nodejs-16_x"]
