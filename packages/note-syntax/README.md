@@ -4,6 +4,17 @@ note syntax by ciiqr
 
 ![sample](https://raw.githubusercontent.com/ciiqr/vscode-extensions/main/packages/note-syntax/images/sample.png)
 
+## File extensions
+
+-   `.txt` and `.todo` by default
+-   other extensions can be configured in your `settings.json`:
+
+```jsonc
+"files.associations": {
+    "*.exp": "note"
+}
+```
+
 ## Customize
 
 ### Font colors/styles

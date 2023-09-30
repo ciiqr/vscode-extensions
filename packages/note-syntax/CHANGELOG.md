@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.5.0 - 2023-09-30
+
+-   updated readme with default file extensions
+
 ## 1.4.0 - 2023-05-13
 
 -   updated icon and sample image
