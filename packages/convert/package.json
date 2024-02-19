@@ -24,7 +24,7 @@
     "publisher": "ciiqr",
     "main": "./dist/src/extension.js",
     "scripts": {
-        "build": "esbuild --bundle --platform=node --target=node16 --external:vscode --format=cjs --minify --outfile=./dist/src/extension.js src/extension.ts",
+        "build": "esbuild --bundle --platform=node --target=node18 --external:vscode --format=cjs --minify --outfile=./dist/src/extension.js src/extension.ts",
         "dev": "npm run build -- --sourcemap --watch",
         "vscode:prepublish": "tsc --noEmit && npm run build"
     },
@@ -44,11 +44,10 @@
     "devDependencies": {
         "@pentible/eslint-config-node": "0.68.0",
         "@pentible/eslint-config-prettier": "0.68.0",
-        "@types/node": "16.18.25",
-        "@types/vscode": "^1.77.0",
+        "@types/node": "18.19.17",
+        "@types/vscode": "^1.86.0",
         "@typescript-eslint/eslint-plugin": "^5.56.0",
         "@typescript-eslint/parser": "^5.56.0",
-        "@vscode/test-electron": "^2.3.0",
         "eslint": "^8.36.0",
         "typescript": "5.0.4",
         "yaml": "2.2.2"

@@ -23,7 +23,7 @@
         "@pentible/shellcheck-all": "0.68.0",
         "@pentible/tsconfig": "0.68.0",
         "esbuild": "0.17.18",
-        "generator-code": "1.7.5",
+        "generator-code": "1.8.3",
         "husky": "8.0.3",
         "lint-staged": "13.2.1",
         "prettier": "2.8.8",
