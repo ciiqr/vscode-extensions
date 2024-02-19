@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.5.0 - 2024-02-18
+
+-   updated to support latest vscode release
+
 ## 1.4.0 - 2023-05-13
 
 -   added an icon

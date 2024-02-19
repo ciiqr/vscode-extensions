@@ -1,7 +1,7 @@
 {
     "name": "note-syntax",
     "displayName": "Note",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "private": true,
     "description": "note syntax",
     "categories": [
@@ -54,7 +54,7 @@
         ]
     },
     "engines": {
-        "vscode": "^1.71.0"
+        "vscode": "^1.86.0"
     },
     "icon": "images/icon.png"
 }

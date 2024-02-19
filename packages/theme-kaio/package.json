@@ -1,7 +1,7 @@
 {
     "name": "theme-kaio",
     "displayName": "Kaio",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "private": true,
     "description": "monokai inspired theme",
     "categories": [
@@ -33,7 +33,7 @@
         ]
     },
     "engines": {
-        "vscode": "^1.77.0"
+        "vscode": "^1.86.0"
     },
     "icon": "images/icon.png"
 }

@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.6.0 - 2024-02-18
+
+-   updated to support latest vscode release
+
 ## 1.5.0 - 2023-09-30
 
 -   updated readme with default file extensions

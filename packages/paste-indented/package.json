@@ -1,7 +1,7 @@
 {
     "name": "paste-indented",
     "displayName": "Paste Indented",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "private": true,
     "description": "paste indented to the same level as the current line",
     "categories": [
@@ -46,6 +46,6 @@
         "typescript": "5.3.3"
     },
     "engines": {
-        "vscode": "^1.77.0"
+        "vscode": "^1.86.0"
     }
 }
