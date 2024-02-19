@@ -14,13 +14,18 @@ if [[ -z "$package" || "$#" != 1 ]]; then
     exit 1
 fi
 
+declare workspace="$package"
+if [[ "$workspace" == 'convert' ]]; then
+    workspace='convert-format'
+fi
+
 # update package.json
-npm version minor --workspace "$package"
+npm version minor --workspace "$workspace"
 
 # get new version
 declare version
 version="$(
-    npm pkg get version --workspace "$package" \
+    npm pkg get version --workspace "$workspace" \
         | jq -r 'to_entries[].value'
 )"
 
