@@ -25,7 +25,7 @@ npm version minor --workspace "$workspace"
 # get new version
 declare version
 version="$(
-    npm pkg get version --workspace "$workspace" \
+    npm pkg get version --ws --workspace "$workspace" \
         | jq -r 'to_entries[].value'
 )"
 
