@@ -12,24 +12,24 @@
         "dev": "turbo dev",
         "lint": "check-package-lock && shellcheck-all && tsc -b && eslint . && prettier --loglevel warn --check .",
         "lint:fix": "eslint --fix . && prettier --loglevel warn --write .",
-        "prepare": "husky install"
+        "prepare": "husky"
     },
     "devDependencies": {
-        "@pentible/check-package-lock": "0.68.0",
-        "@pentible/eslint-config": "0.68.0",
-        "@pentible/eslint-config-node": "0.68.0",
-        "@pentible/eslint-config-prettier": "0.68.0",
-        "@pentible/prettier": "0.68.0",
-        "@pentible/shellcheck-all": "0.68.0",
-        "@pentible/tsconfig": "0.68.0",
-        "esbuild": "0.17.18",
+        "@pentible/check-package-lock": "0.95.0",
+        "@pentible/eslint-config": "0.95.0",
+        "@pentible/eslint-config-node": "0.95.0",
+        "@pentible/eslint-config-prettier": "0.95.0",
+        "@pentible/prettier": "0.95.0",
+        "@pentible/shellcheck-all": "0.95.0",
+        "@pentible/tsconfig": "0.95.0",
+        "@vscode/vsce": "2.23.0",
+        "esbuild": "0.20.0",
         "generator-code": "1.8.3",
-        "husky": "8.0.3",
-        "lint-staged": "13.2.1",
-        "prettier": "2.8.8",
-        "turbo": "1.9.3",
-        "typescript": "5.0.4",
-        "vsce": "2.11.0",
-        "yo": "4.3.1"
+        "husky": "9.0.11",
+        "lint-staged": "15.2.2",
+        "prettier": "3.2.5",
+        "turbo": "1.12.4",
+        "typescript": "5.3.3",
+        "yo": "5.0.0"
     }
 }

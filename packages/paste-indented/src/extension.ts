@@ -13,9 +13,11 @@ export function activate(context: ExtensionContext) {
             }
 
             if (!supportedLanguages.includes(editor.document.languageId)) {
-                return await commands.executeCommand(
+                await commands.executeCommand(
                     "editor.action.clipboardPasteAction",
                 );
+
+                return;
             }
 
             // TODO: handle tabs... (both for indent size and trimming...)
