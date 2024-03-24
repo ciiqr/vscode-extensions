@@ -10,8 +10,8 @@
     "scripts": {
         "bump-version": "./scripts/bump-version.sh",
         "dev": "turbo dev",
-        "lint": "check-package-lock && shellcheck-all && tsc -b && eslint . && prettier --loglevel warn --check .",
-        "lint:fix": "eslint --fix . && prettier --loglevel warn --write .",
+        "lint": "check-package-lock && shellcheck-all && tsc -b && eslint . && prettier --log-level warn --check .",
+        "lint:fix": "eslint --fix . && prettier --log-level warn --write .",
         "prepare": "husky"
     },
     "devDependencies": {
