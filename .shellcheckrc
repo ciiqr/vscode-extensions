@@ -1,8 +1,8 @@
-enable=add-default-case
-enable=avoid-nullary-conditions
-enable=check-unassigned-uppercase
-enable=quote-safe-variables
-enable=require-double-brackets
-
 disable=SC1090
 disable=SC1091
+disable=SC2016
+
+enable=add-default-case
+enable=avoid-nullary-conditions
+enable=quote-safe-variables
+enable=require-double-brackets
