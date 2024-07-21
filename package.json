@@ -15,21 +15,21 @@
         "prepare": "husky"
     },
     "devDependencies": {
-        "@pentible/check-package-lock": "0.95.0",
-        "@pentible/eslint-config": "0.95.0",
-        "@pentible/eslint-config-node": "0.95.0",
-        "@pentible/eslint-config-prettier": "0.95.0",
-        "@pentible/prettier": "0.95.0",
-        "@pentible/shellcheck-all": "0.95.0",
-        "@pentible/tsconfig": "0.95.0",
+        "@pentible/check-package-lock": "0.102.0",
+        "@pentible/eslint-config": "0.102.0",
+        "@pentible/eslint-config-node": "0.102.0",
+        "@pentible/eslint-config-prettier": "0.102.0",
+        "@pentible/prettier": "0.102.0",
+        "@pentible/shellcheck-all": "0.102.0",
+        "@pentible/tsconfig": "0.102.0",
         "@vscode/vsce": "2.22.0",
         "esbuild": "0.20.0",
         "generator-code": "1.8.3",
         "husky": "9.0.11",
         "lint-staged": "15.2.2",
-        "prettier": "3.2.5",
+        "prettier": "3.3.3",
         "turbo": "1.12.4",
-        "typescript": "5.3.3",
+        "typescript": "5.5.3",
         "yo": "5.0.0"
     }
 }

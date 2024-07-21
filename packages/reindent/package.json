@@ -38,14 +38,14 @@
     },
     "activationEvents": [],
     "devDependencies": {
-        "@pentible/eslint-config-node": "0.95.0",
-        "@pentible/eslint-config-prettier": "0.95.0",
+        "@pentible/eslint-config-node": "0.102.0",
+        "@pentible/eslint-config-prettier": "0.102.0",
         "@types/node": "18.19.17",
         "@types/vscode": "^1.86.0",
-        "@typescript-eslint/eslint-plugin": "5.62.0",
-        "@typescript-eslint/parser": "5.62.0",
+        "@typescript-eslint/eslint-plugin": "7.16.1",
+        "@typescript-eslint/parser": "7.16.1",
         "eslint": "^8.56.0",
-        "typescript": "5.3.3"
+        "typescript": "5.5.3"
     },
     "engines": {
         "vscode": "^1.86.0"
