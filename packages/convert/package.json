@@ -22,6 +22,7 @@
     },
     "license": "MIT",
     "publisher": "ciiqr",
+    "type": "module",
     "main": "./dist/src/extension.js",
     "scripts": {
         "build": "esbuild --bundle --platform=node --target=node18 --external:vscode --format=cjs --minify --outfile=./dist/src/extension.js src/extension.ts",

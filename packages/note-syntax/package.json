@@ -21,6 +21,7 @@
     },
     "license": "MIT",
     "publisher": "ciiqr",
+    "type": "module",
     "contributes": {
         "configurationDefaults": {
             "[note]": {

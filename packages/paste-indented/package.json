@@ -21,6 +21,7 @@
     },
     "license": "MIT",
     "publisher": "ciiqr",
+    "type": "module",
     "main": "./dist/src/extension.js",
     "scripts": {
         "dev": "tsc --watch",
