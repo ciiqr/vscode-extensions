@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.6.0 - 2026-07-29
+
+-   fixed filename casing (which was inconsistently breaking the theme on linux)
+
 ## 1.5.0 - 2024-02-18
 
 -   updated to support latest vscode release

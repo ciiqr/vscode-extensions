@@ -1,7 +1,7 @@
 {
     "name": "theme-kaio",
     "displayName": "Kaio",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "private": true,
     "description": "monokai inspired theme",
     "categories": [
@@ -29,7 +29,7 @@
             {
                 "label": "Kaio",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Kaio-color-theme.json"
+                "path": "./themes/kaio-color-theme.json"
             }
         ]
     },
